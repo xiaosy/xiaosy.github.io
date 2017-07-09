@@ -5,22 +5,22 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>php数组开辟空间的性能消耗 | Hexo</title>
+  <link rel="dns-prefetch" href="http://xiaosy.github.io">
+  <title>php数组开辟空间的性能消耗 | Sean blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="今天在写迁移脚本时候，发现脚本执行时间花了太多时间了。最后定位到时再往一个数组中添加新数组的过程中消耗了很多时间。在调试过程中，发现在处理小数据的时候，用PHP自带的函数比如array_merge的性能与直接开辟空间的方法处理速度相当，但是当数据上去了之后，直接开辟空间的方法的优势就显示出来了。所以在操作小数据时候，为了代码简洁可以直接使用PHP自带的函数。 现在我们来测试下：123456$sou">
 <meta name="keywords" content="php">
 <meta property="og:type" content="article">
 <meta property="og:title" content="php数组开辟空间的性能消耗">
-<meta property="og:url" content="http://yoursite.com/2016/04/27/add-array/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://xiaosy.github.io/2016/04/27/add-array/index.html">
+<meta property="og:site_name" content="Sean blog">
 <meta property="og:description" content="今天在写迁移脚本时候，发现脚本执行时间花了太多时间了。最后定位到时再往一个数组中添加新数组的过程中消耗了很多时间。在调试过程中，发现在处理小数据的时候，用PHP自带的函数比如array_merge的性能与直接开辟空间的方法处理速度相当，但是当数据上去了之后，直接开辟空间的方法的优势就显示出来了。所以在操作小数据时候，为了代码简洁可以直接使用PHP自带的函数。 现在我们来测试下：123456$sou">
 <meta property="og:updated_time" content="2016-04-30T14:14:33.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php数组开辟空间的性能消耗">
 <meta name="twitter:description" content="今天在写迁移脚本时候，发现脚本执行时间花了太多时间了。最后定位到时再往一个数组中添加新数组的过程中消耗了很多时间。在调试过程中，发现在处理小数据的时候，用PHP自带的函数比如array_merge的性能与直接开辟空间的方法处理速度相当，但是当数据上去了之后，直接开辟空间的方法的优势就显示出来了。所以在操作小数据时候，为了代码简洁可以直接使用PHP自带的函数。 现在我们来测试下：123456$sou">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Sean blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -240,7 +240,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/04/27/add-array/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://xiaosy.github.io/2016/04/27/add-array/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -373,15 +373,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">apache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">go</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -398,10 +402,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">php5-fpm</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">

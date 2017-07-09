@@ -5,22 +5,22 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>并发的坑 | Hexo</title>
+  <link rel="dns-prefetch" href="http://xiaosy.github.io">
+  <title>并发的坑 | Sean blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="平时在工作中，我们经常看到一段运行很正常的功能代码，一旦遇到用户并发请求的时候，总会出现一些让人意外的bug。 首先来看下这2个方法，一个从redis中取数据，一个往redis中存数据:     1234567891011function getTestData()&amp;#123;    $redis = Yii::$app-&amp;gt;cache-&amp;gt;redis;    return $redis-">
 <meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="并发的坑">
-<meta property="og:url" content="http://yoursite.com/2016/04/23/concurrent-hazards/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://xiaosy.github.io/2016/04/23/concurrent-hazards/index.html">
+<meta property="og:site_name" content="Sean blog">
 <meta property="og:description" content="平时在工作中，我们经常看到一段运行很正常的功能代码，一旦遇到用户并发请求的时候，总会出现一些让人意外的bug。 首先来看下这2个方法，一个从redis中取数据，一个往redis中存数据:     1234567891011function getTestData()&amp;#123;    $redis = Yii::$app-&amp;gt;cache-&amp;gt;redis;    return $redis-">
 <meta property="og:updated_time" content="2016-04-24T14:48:51.771Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="并发的坑">
 <meta name="twitter:description" content="平时在工作中，我们经常看到一段运行很正常的功能代码，一旦遇到用户并发请求的时候，总会出现一些让人意外的bug。 首先来看下这2个方法，一个从redis中取数据，一个往redis中存数据:     1234567891011function getTestData()&amp;#123;    $redis = Yii::$app-&amp;gt;cache-&amp;gt;redis;    return $redis-">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Sean blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -239,7 +239,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/04/23/concurrent-hazards/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://xiaosy.github.io/2016/04/23/concurrent-hazards/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -372,15 +372,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">apache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">go</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -397,10 +401,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">php5-fpm</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">

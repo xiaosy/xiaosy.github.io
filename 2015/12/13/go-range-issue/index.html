@@ -5,22 +5,22 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>用go的range循环数组的坑 | Hexo</title>
+  <link rel="dns-prefetch" href="http://xiaosy.github.io">
+  <title>用go的range循环数组的坑 | Sean blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="这周在找go的兑换产品码的bug时候，定位到是在用go的range循环一个数组的时候出问题了。bug原因是：循环的时候，给调用的方法传递一个指针参数，导致每次传递的值都是同一个值。刚开始时候，不知道为什么会这样，循环的时候值不是一直在变化，怎么值的地址没有跟着变化？后来查了资料才明白：range里面的是指针数据就是一个copy值，指针本身都是指向同一个地址。 这个是一个测试代码：12345678">
 <meta name="keywords" content="go">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用go的range循环数组的坑">
-<meta property="og:url" content="http://yoursite.com/2015/12/13/go-range-issue/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://xiaosy.github.io/2015/12/13/go-range-issue/index.html">
+<meta property="og:site_name" content="Sean blog">
 <meta property="og:description" content="这周在找go的兑换产品码的bug时候，定位到是在用go的range循环一个数组的时候出问题了。bug原因是：循环的时候，给调用的方法传递一个指针参数，导致每次传递的值都是同一个值。刚开始时候，不知道为什么会这样，循环的时候值不是一直在变化，怎么值的地址没有跟着变化？后来查了资料才明白：range里面的是指针数据就是一个copy值，指针本身都是指向同一个地址。 这个是一个测试代码：12345678">
 <meta property="og:updated_time" content="2016-01-10T14:14:05.232Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用go的range循环数组的坑">
 <meta name="twitter:description" content="这周在找go的兑换产品码的bug时候，定位到是在用go的range循环一个数组的时候出问题了。bug原因是：循环的时候，给调用的方法传递一个指针参数，导致每次传递的值都是同一个值。刚开始时候，不知道为什么会这样，循环的时候值不是一直在变化，怎么值的地址没有跟着变化？后来查了资料才明白：range里面的是指针数据就是一个copy值，指针本身都是指向同一个地址。 这个是一个测试代码：12345678">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Sean blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -237,7 +237,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2015/12/13/go-range-issue/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://xiaosy.github.io/2015/12/13/go-range-issue/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -365,15 +365,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">apache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">go</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -390,10 +394,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">php5-fpm</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">

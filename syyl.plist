@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="1.0">
+    <dict>
+        <key>items</key>
+        <array>
+            <dict>
+                <key>assets</key>
+                <array>
+                    <dict>
+                        <key>url</key>
+                        <string>https://116.62.126.38:10443/syyl.ipa</string>
+ 
+                        <key>kind</key>
+                        <string>software-package</string>
+                    </dict>
+                </array>
+ 
+                <key>metadata</key>
+                <dict>
+                    <key>bundle-identifier</key>
+                    <string>packageName</string>
+ 
+                    <key>title</key>
+                    <string>appName</string>
+ 
+                    <key>bundle-version</key>
+                    <string>appVersion</string>
+ 
+                    <key>kind</key>
+                    <string>software</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
